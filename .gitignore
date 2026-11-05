@@ -1,0 +1,10 @@
+# Local reports - never commit a real machine's output
+WinCheckup-Report.md
+*.report.md
+!samples/sample-report.md
+
+# Editor / OS noise
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
