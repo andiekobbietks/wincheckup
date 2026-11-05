@@ -3,10 +3,11 @@
 > Internal working notes for a possible paid service built on WinCheckup.
 > Not a published offer. Not customer-facing copy.
 >
-> Pricing here is **judgement, not measurement**. It is deliberately left as a
-> structure rather than a number. Zero-shot numeric estimates are unreliable and
-> should not be published as though they were measured; the number has to come
-> from a local comparator check.
+> Section 5 now separates two things: **measured comparator prices** (published
+> UK list prices, with source and date) and **judgement** (which band to price
+> into). Comparators are other people's advertised prices, not what customers
+> actually pay. Do not present the comparator median as your own price; it is a
+> reference point.
 
 ## 1. What the report covers, and what it does not
 
@@ -69,16 +70,58 @@ Put this in writing, before money changes hands.
 
 Give the client both lists: what was checked, and what was not.
 
-## 5. Charging (structure, not numbers)
+## 5. Charging (market comparators, then judgement)
 
-- **Per-visit fee** -- the first clean-up. One-off.
+Two layers, kept apart:
+
+1. **Measured** -- what other UK domestic PC services advertise, below.
+2. **Judgement** -- which band to price into. The comparator set informs it; it
+   does not decide it.
+
+### 5a. Comparators (measured: published list prices)
+
+| Provider | Scope | Price | Source / read date |
+|---|---|---|---|
+| pcrepair2000 (NW London, mobile) | Minimum labour charge | from £50 | pcrepair2000.co.uk/prices.html, 2026-11-05 |
+| pcrepair2000 | PC/laptop health check | from £60 | same |
+| Which? Trusted Traders | General service (slow machine, no faults, 1-2 hrs) | £60 | trustedtraders.which.co.uk, updated Nov 2025, excl VAT |
+| Checkatrade | Computer maintenance | £70 plus parts | checkatrade.com cost guide |
+| KB Computer Repairs (Sussex, mobile, 2026 list) | Software home visit + install | from £89.99 | kbcomputerrepairs.co.uk, 2026 list |
+| PC and Mac World (London) | Initial setup / Windows reinstall | £99 | pcandmacworld.co.uk/pricing |
+| Currys (national) | Upfront computer repair fee | £50 | currys.co.uk, non-refundable |
+| Checkatrade | Computer repair, per hour | £40/hr | same cost guide |
+| pcrepair2000 | Labour, per hour | £80/hr | same price list |
+| PC and Mac World | Remote support, per hour | ~£100/hr (£30 first 15 min, £25 each extra 15) | same pricing page |
+| Checkatrade | Annual maintenance contract | £200/yr | same cost guide |
+| KB Computer Repairs | Remote IT support (returning customers) | from £90 | same 2026 list |
+
+Summary of the comparator set, computed from the table above:
+
+- One-off service / health check / setup, n = 7: median £60, range £50-£99.
+- Hourly labour, n = 3: median £80, range £40-£100.
+- Annual maintenance contract, n = 1: £200 (Checkatrade). Monthly plans exist but are quoted, not published.
+
+Caveats: these are advertised list prices, not transaction prices; several
+exclude VAT; several are "from" prices that rise with parts, travel or evenings.
+Currys' £50 is a deposit, refunded against a higher repair price.
+
+### 5b. Applying it (judgement)
+
+- **Per-visit fee** -- the first clean-up. One-off. The comparator median for a
+  one-off service is £60 (range £50-£99); a mobile home-visit service sits at
+  the upper end of that band. Position the first visit inside that band. This is
+  a judgement, not a computed price.
 - **Monthly retainer** -- the recurring check plus fixes. This is the actual
-  business; the report is the receipt.
+  business; the report is the receipt. The only published recurring figure found
+  is a £200 annual maintenance contract (Checkatrade), a reference band rather
+  than a rule.
 
 The monthly cadence is a judgement, not a measurement. It fits what the tool
 actually detects: the "no update in 90 days" flag cannot trip sooner than 90
 days, the OS support date changes once every several years, and disk space
 crosses a threshold gradually. Daily monitoring would be motion without value.
+Comparators show recurring maintenance is an established product (annual
+contracts, monthly plans), so the retainer is not a novel ask.
 
 Do not price the scan. Price the human.
 
@@ -99,5 +142,7 @@ Do not price the scan. Price the human.
 - Is the first paid job for a known person (lowest legal exposure) or a
   stranger?
 - Does the client want a document they keep, or a person who turns up?
-- What does the local market charge for a comparable domestic visit? (Do not
-  estimate this. Compare.)
+- What does the local market charge for a comparable domestic visit? **Partly
+  answered** -- see section 5a for the first comparator set (7 one-off prices, 3
+  hourly rates, read 2026-11-05). Still to add: prices from shops physically near
+  the client area, and any local monthly-plan pricing.

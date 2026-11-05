@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- `docs/service-model.md`: added a measured UK comparator set -- 12 published
+  list prices across 6 providers, read 2026-11-05 -- and split "measured
+  comparators" from "judgement" in the charging section. No comparator figure is
+  presented as a price recommendation.
+
 ## 0.1.0 - 2026-11-05
 
 First commit.
